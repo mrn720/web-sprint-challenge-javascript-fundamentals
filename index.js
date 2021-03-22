@@ -17,7 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+//The function nestedFunction is inside of myFunction, and const internal is inside the functions scope. It should have access to anything above in the function and previously stated variables also. 
 
 
 
@@ -28,10 +28,14 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(number) {
+  let newNum = 0;
+  for(let i = number; i > 0; i--) {
+    newNum = newNum + number;
+    number--;
   }
+  return newNum;
+}
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
